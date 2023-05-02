@@ -1,0 +1,92 @@
+{
+  "key": "group_hero",
+  "title": "Hero",
+  "fields": [
+    {
+      "key": "field_title",
+      "label": "Title",
+      "name": "title",
+      "type": "textarea",
+      "instructions": "Enter the hero title here",
+      "required": true,
+      "default_value": "",
+      "placeholder": "",
+      "formatting": "html",
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      }
+    },
+    {
+      "key": "field_content",
+      "label": "Content",
+      "name": "content",
+      "type": "textarea",
+      "instructions": "Enter the hero content here",
+      "required": true,
+      "default_value": "",
+      "placeholder": "",
+      "formatting": "html",
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      }
+    },
+    {
+      "key": "field_button",
+      "label": "Button",
+      "name": "button",
+      "type": "text",
+      "instructions": "Enter the text for the hero button here",
+      "required": false,
+      "default_value": "",
+      "placeholder": "",
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      }
+    },
+    {
+      "key": "field_button_link",
+      "label": "Button Link",
+      "name": "button_link",
+      "type": "url",
+      "instructions": "Enter the URL for the hero button link here",
+      "required": false,
+      "default_value": "",
+      "placeholder": "",
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      }
+    },
+    {
+      "key": "field_background_image",
+      "label": "Background Image",
+      "name": "background_image",
+      "type": "url",
+      "instructions": "Enter the URL for the hero background image here",
+      "required": true,
+      "default_value": "",
+      "placeholder": "",
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      }
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "post_type",
+        "operator": "==",
+        "value": "page"
+      }
+    ]
+  ]
+}

@@ -1,0 +1,62 @@
+$font-family-primary: 'Open Sans', sans-serif;
+$font-family-secondary: 'Merriweather', serif;
+
+$color-primary: #007acc;
+$color-secondary: #6c757d;
+$color-accent: #f5f5f5;
+
+$spacing-xxs: 0.25rem;
+$spacing-xs: 0.5rem;
+$spacing-sm: 1rem;
+$spacing-md: 1.5rem;
+$spacing-lg: 2rem;
+$spacing-xl: 3rem;
+
+// Mixins
+
+@mixin font-family($family) {
+  font-family: $family;
+}
+
+@mixin font-size($size) {
+  font-size: $size;
+}
+
+@mixin text-color($color) {
+  color: $color;
+}
+
+@mixin background-color($color) {
+  background-color: $color;
+}
+
+@mixin padding($size) {
+  padding: $size;
+}
+
+@mixin margin($size) {
+  margin: $size;
+}
+
+// Typograhy
+.heading-primary {
+  @include font-family($font-family-primary);
+  @include font-size(2rem);
+  @include text-color($color-primary);
+  @include margin($spacing-lg);
+}
+
+.paragraph {
+  @include font-family($font-family-secondary);
+  @include font-size(1rem);
+  @include text-color($color-secondary);
+  @include margin($spacing-sm);
+}
+
+.button {
+  @include font-family($font-family-secondary);
+  @include font-size(1rem);
+  @include text-color($color-primary);
+  @include background-color($color-secondary);
+  @include padding($spacing-sm $spacing-lg);
+}
