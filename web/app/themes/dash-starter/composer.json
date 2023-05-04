@@ -40,6 +40,7 @@
   },
   "require": {
     "php": "^8.0",
+    "log1x/navi": "^2.0",
     "mwdelaney/sage-acf-gutenberg-blocks": "^0.7.0",
     "mwdelaney/sage-advanced-custom-fields": "^1.6"
   },

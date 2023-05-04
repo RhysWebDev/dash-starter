@@ -134,3 +134,36 @@ add_action('widgets_init', function () {
         'id' => 'sidebar-footer',
     ] + $config);
 });
+
+// Footer menu 
+
+add_action('init', function () {
+    register_nav_menus([
+      'footer_menu' => __('Footer Menu', 'sage'),
+    ]);
+  });
+
+  // Display the footer menu
+add_action('sage/footer/section_before', function () {
+    if (has_nav_menu('footer_menu')) {
+      wp_nav_menu([
+        'theme_location' => 'footer_menu',
+        'menu_class' => 'footer-menu',
+        'container' => false,
+      ]);
+    }
+  });
+
+
+// Options page
+
+if( function_exists('acf_add_options_page') ) {
+    acf_add_options_page(array(
+        'page_title' => 'Theme Settings',
+        'menu_title' => 'Theme Settings',
+        'menu_slug' => 'theme-settings',
+        'capability' => 'edit_posts',
+        'redirect' => false
+    ));
+}
+

@@ -5,3 +5,15 @@
 
 //  Custom Imports
 @import './global.scss';
+@import 'swiper/css/bundle';
+
+// Adobe font
+@import url('https://use.typekit.net/xqq6neg.css');
+
+// Google Font
+@import url('https://fonts.googleapis.com/css2?family=Amiri&family=DM+Sans:wght@400;500;700&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;1,400&display=swap');
+
+// Blocks
+@import './hero.scss';
+@import './service_carousel.scss';
+@import './testimonial.scss';

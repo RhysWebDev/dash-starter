@@ -1,0 +1,13 @@
+.service_carousel {
+  &__subtitle {
+    max-width: 32ch;
+  }
+}
+
+.service_carousel__slider {
+  .swiper,
+  .swiper-container {
+    padding-bottom: 25px !important;
+    margin-left: 25x !important;
+  }
+}
