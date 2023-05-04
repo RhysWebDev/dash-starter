@@ -33,7 +33,7 @@
                     @if (have_rows('column_2_cards'))
                         @while (have_rows('column_2_cards'))
                             @php(the_row())
-                            <div class="bg-white rounded-lg px-[3rem] p-5 py-[3rem] shadow-lg">
+                            <div class="bg-white rounded-lg px-[3rem] p-4 py-[3rem] shadow-lg">
                                 <img class="mb-4" src="{{ get_sub_field('icon')['url'] }}"
                                     alt="{{ get_sub_field('icon')['alt'] }}">
                                 <h6 class="mt-3 mb-2">{{ get_sub_field('small_title') }}</h6>
