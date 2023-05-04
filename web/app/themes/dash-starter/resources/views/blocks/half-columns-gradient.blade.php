@@ -29,15 +29,15 @@
                     <div class="flex justify-between button_wrapper">
 
                         @php $teams_button = get_field('teams_button'); @endphp
-                        <a href="{{ $teams_button['url'] }}" class="btn btn--teams"><i
+                        <a href="{{ $teams_button['url'] }}" class="btn btn--teams btn--lesspadding"><i
                                 class="fab fa-windows mr-[1rem]"></i>{{ $teams_button['title'] }}</a>
 
                         @php $email_button = get_field('email_button'); @endphp
-                        <a href="{{ $email_button['url'] }}" class="btn btn--secondary"><i
+                        <a href="{{ $email_button['url'] }}" class="btn btn--secondary btn--lesspadding"><i
                                 class="fas fa-envelope mr-[1rem]"></i>{{ $email_button['title'] }}</a>
 
                         @php $phone_button = get_field('phone_button'); @endphp
-                        <a href="{{ $phone_button['url'] }}" class="btn btn--primary"><i
+                        <a href="{{ $phone_button['url'] }}" class="btn btn--primary btn--lesspadding"><i
                                 class="fas fa-phone mr-[1rem]"></i>{{ $phone_button['title'] }}</a>
 
                     </div>

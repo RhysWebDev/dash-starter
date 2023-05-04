@@ -15,7 +15,7 @@
   EnqueueAssets: path/to/asset
 --}}
 
-<section class="bg-gray-100" style="background-image: url({{ get_field('background_image') }});">
+<section class="bg-gray-100 bg-cover" style="background-image: url({{ get_field('background_image') }});">
     <div class="container mx-auto py-12 px-4 align-middle">
         <div class="flex flex-wrap -mx-4 align-middle items-center">
             <div class="w-full md:w-1/2 px-4">
@@ -33,7 +33,7 @@
                     @if (have_rows('column_2_cards'))
                         @while (have_rows('column_2_cards'))
                             @php(the_row())
-                            <div class="bg-white rounded-lg p-6 py-12 shadow-lg">
+                            <div class="bg-white rounded-lg p-[3.5rem] shadow-lg">
                                 <img class="mb-4" src="{{ get_sub_field('icon')['url'] }}"
                                     alt="{{ get_sub_field('icon')['alt'] }}">
                                 <h6 class="mt-3 mb-2">{{ get_sub_field('small_title') }}</h6>

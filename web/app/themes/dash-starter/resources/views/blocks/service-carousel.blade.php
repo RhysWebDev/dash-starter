@@ -44,7 +44,7 @@
                         @endphp
                         <!-- Slides -->
                         <div class="swiper-slide">
-                            <div class="bg-white rounded-lg p-6 shadow-lg">
+                            <div class="bg-white rounded-xl p-6 shadow-lg">
                                 <img class="mb-4" src="{{ $icon }}">
                                 <h5 class=" font-semibold mb-2">{!! get_the_title() !!}</h5>
                                 <p class="mb-4">{!! wp_trim_words(get_the_excerpt(), 20) !!}</p>

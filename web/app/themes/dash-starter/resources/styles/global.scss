@@ -75,19 +75,23 @@ h2 {
   @include font-size($header_medium);
   @include font-family($main-font);
   font-weight: 300;
-  line-height: 70px;
+  line-height: 55px;
   font-weight: 400;
 }
 
 h3 {
   @include font-size($header_small);
   @include font-family($main-font);
-  font-weight: 300;
+  font-weight: 400;
 }
 
 h6 {
   @include font-size($smallTitle);
   font-weight: 500;
+}
+
+p {
+  line-height: 30px;
 }
 
 .large_font {
@@ -187,6 +191,13 @@ h6 {
   &--teams {
     color: $clr-white;
     background: $teams-color;
+  }
+
+  &--lesspadding {
+    @media (max-width: 1660px) {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
   }
 }
 
