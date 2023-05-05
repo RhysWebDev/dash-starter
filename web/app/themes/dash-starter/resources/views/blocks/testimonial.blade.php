@@ -18,7 +18,7 @@
 
 
 <section data-{{ $block['id'] }}
-    class="flex relative testimonial bg-cover bg-center lg:min-h[85vh] items-center align-middle"
+    class="flex relative testimonial bg-cover bg-center lg:min-h[85vh] pb-[6rem] items-center align-middle"
     style="background-image: url('{{ get_field('background_image') }}');">
     <div class="container mx-auto px-4 py-16 items-center align-middle">
         <h2 class="text-center leading-tight text-white  testimonial__title">{!! get_field('main_title') !!}</h2>
