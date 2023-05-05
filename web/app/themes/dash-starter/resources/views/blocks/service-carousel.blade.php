@@ -23,7 +23,7 @@
     </div>
 </section>
 
-<section class="assessments__carousel relative top-[-100px] right-[-20px]">
+<section class="assessments__carousel relative top-[-100px]">
     <div class="container service_carousel__slider max-w-[90%] ml-auto">
         <div class="swiper">
             <!-- Additional required wrapper -->
